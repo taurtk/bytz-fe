@@ -41,6 +41,7 @@ export const CartModal: React.FC<CartModalProps> = ({
   const createOrderItems = (): OrderItem[] => {
     return cartItems.map(cartItem => ({
       itemId: cartItem.id,
+      name: cartItem.name,
       quantity: cartItem.quantity
     }));
   };
