@@ -42,7 +42,8 @@ export const CartModal: React.FC<CartModalProps> = ({
     return cartItems.map(cartItem => ({
       itemId: cartItem.id,
       name: cartItem.name,
-      quantity: cartItem.quantity
+      quantity: cartItem.quantity,
+      price: cartItem.price,
     }));
   };
 
