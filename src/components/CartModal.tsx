@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CartItem, Order, OrderItem } from '../types';
 import { X, Plus, Minus, Trash2, ShoppingBag, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 
-const BASE_URL = 'https://bytz-be.onrender.com';
+const BASE_URL = 'https://bytz-be-qgnonfue2q-ew.a.run.app/';
 
 interface CartModalProps {
   isOpen: boolean;
