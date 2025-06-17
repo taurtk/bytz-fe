@@ -7,7 +7,7 @@ import { VirtualizedMenu } from './VirtualizedMenu';
 import { CartModal } from './CartModal';
 import { useCart } from '../hooks/useCart';
 
-const BASE_URL = 'https://bytz-be.onrender.com';
+const BASE_URL = 'https://bytz-be-qgnonfue2q-ew.a.run.app/';
 
 interface MenuProps {
   restaurantId: string;
