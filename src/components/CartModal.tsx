@@ -120,7 +120,7 @@ export const CartModal: React.FC<CartModalProps> = ({
           <div className="bg-gray-50 rounded-lg p-3 mb-4">
             <p className="text-sm font-medium text-gray-700">Order ID: #{orderId}</p>
             <p className="text-xs text-gray-500 mt-1">Table {table} • {restaurantId}</p>
-            <p className="text-xs text-gray-500 mt-1"> ${lastOrderTotal.toFixed(2)}</p>
+            <p className="text-xs text-gray-500 mt-1"> ₹{lastOrderTotal.toFixed(2)}</p>
           </div>
           <div className="flex items-center justify-center space-x-2 text-orange-600">
             <Clock className="w-4 h-4" />
@@ -167,7 +167,7 @@ export const CartModal: React.FC<CartModalProps> = ({
                   />
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-gray-900 text-sm truncate">{item.name}</h3>
-                    <p className="text-black font-bold text-sm">${item.price}</p>
+                    <p className="text-black font-bold text-sm">₹{item.price}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <button
@@ -203,7 +203,7 @@ export const CartModal: React.FC<CartModalProps> = ({
             <div className="space-y-2 text-sm">
               <div className="flex justify-between text-lg font-bold">
                 <span>Total:</span>
-                <span className="text-black">${total.toFixed(2)}</span>
+                <span className="text-black">₹{total.toFixed(2)}</span>
               </div>
             </div>
 
@@ -248,7 +248,7 @@ export const CartModal: React.FC<CartModalProps> = ({
                     </>
                   ) : (
                     <>
-                      <span>Place Order • ${total.toFixed(2)}</span>
+                      <span>Place Order • ₹{total.toFixed(2)}</span>
                     </>
                   )}
                 </button>

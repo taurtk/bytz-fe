@@ -74,7 +74,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
           <h3 className="font-semibold text-sm text-gray-900 leading-tight group-hover:text-black transition-colors">
             {item.name}
           </h3>
-          <span className="text-lg font-bold text-black ml-2">${item.price}</span>
+          <span className="text-lg font-bold text-black ml-2">₹{item.price}</span>
         </div>
         <p className="text-gray-600 text-xs mb-3 line-clamp-2 leading-relaxed">{item.description}</p>
         
